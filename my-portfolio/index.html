@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan More | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="logo">Rohan More</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#location" class="nav-link">Location</a></li>
+        </ul>
+        <div class="hamburger" aria-label="Toggle navigation">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span>Rohan More</span></h1>
+            <p class="hero-subtitle">Android & Flutter Developer</p>
+            <p class="hero-description">Building innovative mobile solutions with a focus on performance and user experience</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary pulse">View Projects <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Contact Me <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/profile.png" alt="Rohan More Profile" class="profile-img floating">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="assets/images/profile.png" alt="Rohan More Portrait" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-subtitle">Who am I?</h3>
+                    <p class="about-desc">I'm a passionate Android and Flutter developer with a strong foundation in mobile and web application development. I enjoy building intuitive, high-performance apps that solve real-world problems and provide seamless user experiences.</p>
+                    <p class="about-desc">With expertise in modern frameworks like Flutter, Android (Java/Kotlin), and web technologies, I transform ideas into responsive, scalable, and visually appealing digital products.</p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Name:</span>
+                            <span class="detail-value">Rohan More</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Email:</span>
+                            <span class="detail-value">rmore3791@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Experience:</span>
+                            <span class="detail-value">3+ Month</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Freelance:</span>
+                            <span class="detail-value">Available</span>
+                        </div>
+                    </div>
+                    
+                    <div class="core-skills">
+                        <h4 class="core-skills-title">Core Skills:</h4>
+                        <div class="skill-buttons">
+                            <button class="skill-btn">Android Development</button>
+                            <button class="skill-btn">Flutter</button>
+                            <button class="skill-btn">REST APIs</button>
+                            <button class="skill-btn">Firebase</button>
+                            <button class="skill-btn">Dart</button>
+                            <button class="skill-btn">Kotlin</button>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                        <a href="#" class="btn btn-secondary">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-card glass fade-in">
+                    <div class="skill-icon"><i class="fab fa-flutter"></i></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Flutter</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass fade-in">
+                    <div class="skill-icon"><i class="fab fa-android"></i></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Android</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass fade-in">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass fade-in">
+                    <div class="skill-icon"><i class="fab fa-kotlin"></i></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Kotlin</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass fade-in">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass fade-in">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Firebase</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass fade-in">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-info">
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass fade-in">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <div class="skill-info">
+                        <span class="skill-name">Git</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+            </div>
+            
+            <div class="projects-container">
+                <div class="projects-grid">
+                    <div class="project-card glass fade-in" data-category="mobile">
+                        <div class="project-image">
+                            <img src="assets/images/restaurant.jpg" alt="Restaurant Management System">
+                            <div class="project-overlay">
+                                <h4>Restaurant Management System</h4>
+                                <p>Full-stack solution for restaurant operations</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-links">
+                                <button class="btn btn-primary view-details" data-project="restaurant">View Details</button>
+                                <a href="https://github.com/yourusername/restaurant" target="_blank" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass fade-in" data-category="mobile">
+                        <div class="project-image">
+                            <img src="assets/images/wanderlist.jpg" alt="Wanderlist">
+                            <div class="project-overlay">
+                                <h4>Wanderlist</h4>
+                                <p>Travel planning and destination tracking app</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-links">
+                                <button class="btn btn-primary view-details" data-project="wanderlist">View Details</button>
+                                <a href="https://github.com/yourusername/wanderlist" target="_blank" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass fade-in" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/images/krishimitra.jpg" alt="KrishiMitra">
+                            <div class="project-overlay">
+                                <h4>KrishiMitra</h4>
+                                <p>Agricultural marketplace with AI chatbot</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-links">
+                                <button class="btn btn-primary view-details" data-project="krishimitra">View Details</button>
+                                <a href="https://github.com/yourusername/krishimitra" target="_blank" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass fade-in" data-category="desktop">
+    <div class="project-image">
+        <img src="assets/images/zerodha.jpg" alt="Zerodha Clone">
+        <div class="project-overlay">
+            <h4>Zerodha Clone</h4>
+            <p>Zerodha Clone – Stock Trading Platform</p>
+        </div>
+    </div>
+    <div class="project-info">
+        <div class="project-links">
+            <button class="btn btn-primary view-details" data-project="zerodha">View Details</button>
+            <a href="https://github.com/morerohan24/Zerodha.git" target="_blank" class="btn btn-secondary">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+</div>
+                    
+                    <div class="project-card glass fade-in" data-category="mobile">
+                        <div class="project-image">
+                            <img src="assets/images/tripplanner.jpg" alt="Tripplanner">
+                            <div class="project-overlay">
+                                <h4>Tripplanner</h4>
+                                <p>Cross-platform travel planning app</p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-links">
+                                <button class="btn btn-primary view-details" data-project="tripplanner">View Details</button>
+                                <a href="https://github.com/yourusername/tripplanner" target="_blank" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project Details Modal -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content glass">
+                <span class="close-modal">×</span>
+                <h3 id="modalTitle"></h3>
+                <div id="modalDetails"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">My <span>Certificates</span></h2>
+            <div class="certificates-container">
+                <div class="certificate-card glass fade-in">
+                    <div class="certificate-image">
+                        <img src="assets/images/certificate1.jpg" alt="Certificate in Web Development in Node.js: Build Your First Website">
+                        <div class="certificate-overlay">
+                            <button class="btn btn-primary view-certificate">View Certificate</button>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>Certificate in Web Development in Node.js: Build Your First Website</h4>
+                        <p>Coursera</p>
+                        <span class="certificate-date">Issued: April 2025</span>
+                    </div>
+                </div>
+                
+                <div class="certificate-card glass fade-in">
+                    <div class="certificate-image">
+                        <img src="assets/images/certificate2.jpg" alt="Certificate in Alpha (DSA with Java) ">
+                        <div class="certificate-overlay">
+                            <button class="btn btn-primary view-certificate">View Certificate</button>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>Certificate in Alpha (DSA with Java)</h4>
+                        <p>APNA COLLEGE</p>
+                        <span class="certificate-date">Issued: March 2025</span>
+                    </div>
+                </div>
+                
+                <div class="certificate-card glass fade-in">
+                    <div class="certificate-image">
+                        <img src="assets/images/certificate3.jpg" alt="Certificate in APIs in Java: Call and Integrate an API">
+                        <div class="certificate-overlay">
+                            <button class="btn btn-primary view-certificate">View Certificate</button>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>Certificate in APIs in Java: Call and Integrate an API</h4>
+                        <p>Coursera</p>
+                        <span class="certificate-date">Issued: September 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificate Modal -->
+        <div id="certificateModal" class="modal">
+            <div class="modal-content glass">
+                <span class="close-modal">×</span>
+                <img id="certificateImage" src="" alt="Certificate">
+                <h4 id="certificateTitle"></h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-container">
+                <div class="contact-info glass">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <span>rmore3791@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <span>7057416393</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <span>Pune, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/yourusername" target="_blank" class="social-icon" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/yourusername" target="_blank" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/yourusername" target="_blank" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form glass">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                    <input type="hidden" name="subject" value="New Message from Portfolio">
+                    <input type="checkbox" name="botcheck" style="display: none;">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">My <span>Location</span></h2>
+            <div class="map-container glass">
+                <div id="map"></div>
+                <div class="map-overlay">
+                    <h3>Based in Pune</h3>
+                    <p>Open to remote opportunities worldwide</p>
+                    <div class="map-links">
+                        <a href="#" class="btn btn-primary">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Rohan More</div>
+                <p>Android & Flutter Developer</p>
+                <div class="footer-social">
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> Rohan More. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
